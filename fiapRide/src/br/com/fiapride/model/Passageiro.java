@@ -11,8 +11,7 @@ public class Passageiro {
 	 this.setCpf(cpf);
 	 this.setSaldo(0); 
 	}
-	
-	
+
 	public double getSaldo() {
 	return this.saldo; // Apenas devolve o valor, não altera nada.
 	}
@@ -40,4 +39,8 @@ public class Passageiro {
 	private void setCpf(String cpf) {
 	this.cpf = cpf;
 	}
+
+    public void adicionarSaldo(double saldoAtual) {
+		saldo += saldoAtual;
+    }
 }

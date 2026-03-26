@@ -7,19 +7,23 @@ public class Mochila {
 	private double peso;
 	private boolean aberto;
 	private boolean fechado;
+
+	private Itens item;
 	
-	public Mochila(String material, int tamanho, double peso, boolean aberto, boolean fechado) {
+	public Mochila(String material, int tamanho, double peso, boolean aberto, boolean fechado, Itens item) {
 		this.setTamanho(tamanho);
 		this.setMaterial(material);
 		this.setPeso(peso);
 		this.setAberto(aberto);
 		this.setFechado(fechado);
+		this.item = item;
 	}
 	
-	public Mochila(String material, int tamanho, double peso) {
+	public Mochila(String material, int tamanho, double peso, Itens item) {
 		this.setTamanho(tamanho);
 		this.setMaterial(material);
 		this.setPeso(peso);
+		this.item = item;
 	}
 	
 	public int getTamanho() {
@@ -76,7 +80,7 @@ public class Mochila {
 			System.out.println("Abrindo mochila");
 			return;
 		}
-		if(aberto == false) {
+		if(!aberto) {
 			System.out.println("Não abrindo mochila");
 			return;
 		}
@@ -91,6 +95,13 @@ public class Mochila {
 				System.out.println("Não fechando mochila");
 				return;
 		}
-		
+	}
+
+	public void mostrarItem() {
+		if (item != null) {
+			item.exibirResumo();
+		} else {
+			System.out.println("Mochila sem item");
+		}
 	}
 }
