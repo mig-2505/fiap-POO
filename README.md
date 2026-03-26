@@ -8,6 +8,7 @@ O objetivo é praticar conceitos fundamentais de POO, como:
 - Getters e Setters
 - Encapsulamento
 - Construtores
+- Associações
 
 ## Como Executar o Projeto 
 1. Clone este repositório:
