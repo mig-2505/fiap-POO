@@ -9,6 +9,7 @@ O objetivo é praticar conceitos fundamentais de POO, como:
 - Encapsulamento
 - Construtores
 - Associações
+- Herança
 
 ## Como Executar o Projeto 
 1. Clone este repositório:
