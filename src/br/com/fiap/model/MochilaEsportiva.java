@@ -17,4 +17,14 @@ public class MochilaEsportiva extends Mochila{
             System.out.println("Não é possivel colocar o objeto esportivo, a mochila não tem o compartimento!");
         }
     }
+
+    @Override
+    public void mostrarModelo() {
+        System.out.println("Modelo: Mochila Esportiva");
+    }
+
+    @Override
+    public void mostrarUsos() {
+        System.out.println("Mochila Esportiva: Guardar todos tipos de objeto relacionados a esporte");
+    }
 }

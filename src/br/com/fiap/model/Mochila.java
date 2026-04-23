@@ -104,4 +104,10 @@ public class Mochila {
 			System.out.println("Mochila sem item");
 		}
 	}
+	public void mostrarModelo(){
+		System.out.println("Modelo: Mochila generica");
+	}
+	public void mostrarUsos(){
+		System.out.println("Mochila generica: Guardar todos tipos de objetos");
+	}
 }

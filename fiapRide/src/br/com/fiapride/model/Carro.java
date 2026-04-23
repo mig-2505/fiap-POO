@@ -1,21 +1,27 @@
 package br.com.fiapride.model;
+import br.com.fiapride.model.Veiculo;
 
 public class Carro extends Veiculo {
 
         private int capacidadePassageiros;
 
-        // CONSTRUTOR DA FILHA
-        public Carro(String placa, String modelo, int capacidadePassageiros) {
+        public Carro (String placa, String modelo) {
                 super(placa, modelo);
-                this.setCapacidadePassageiros(capacidadePassageiros);}
-
-        public int getCapacidadePassageiros() {
-                return capacidadePassageiros;
+                this.setCapacidadePassageiros(4);
         }
 
-        public void setCapacidadePassageiros(int capacidadePassageiros) {
+        public int getCapacidadePassageiros() {
+                return this.capacidadePassageiros;
+        }
+
+        private void setCapacidadePassageiros(int capacidadePassageiros) {
                 this.capacidadePassageiros = capacidadePassageiros;
         }
 
+        @Override
+        // Anotação obrigatória (Boas Práticas!)
+        public String calcularAutonomia() {
+                double kmRestante = this.getNivelCombustivel() * 10.0;
+                return "Autonomia: " + kmRestante + " km (Consumo de 10 km/l).";
+        }
 }
-
