@@ -10,6 +10,9 @@ O objetivo é praticar conceitos fundamentais de POO, como:
 - Construtores
 - Associações
 - Herança
+- Polimorfismo
+- Listas
+- 
 
 ## Como Executar o Projeto 
 1. Clone este repositório:
