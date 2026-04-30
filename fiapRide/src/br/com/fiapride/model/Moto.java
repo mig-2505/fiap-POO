@@ -1,5 +1,4 @@
 package br.com.fiapride.model;
-import br.com.fiapride.model.Veiculo;
 
 public class Moto extends Veiculo {
 
@@ -9,17 +8,22 @@ public class Moto extends Veiculo {
         super(placa, modelo);
     }
 
-    public void setIsEletrica (boolean isEletrica) {
-        this.isEletrica = isEletrica;
-    }
-
-    public boolean isEletrica() {
-        return this.isEletrica;
+    @Override
+    public void exibirTipo() {
+        System.out.println("Sou uma Moto");
     }
 
     @Override
     public String calcularAutonomia() {
         double kmRestante = this.getNivelCombustivel() * 35.0;
         return "Autonomia: " + kmRestante + " km (Consumo de 35 km/l).";
+    }
+
+    public boolean isEletrica() {
+        return this.isEletrica;
+    }
+
+    public void setIsEletrica (boolean isEletrica) {
+        this.isEletrica = isEletrica;
     }
 }

@@ -18,10 +18,6 @@ public class SistemaPrincipal {
 		Itens item5 = new Itens("Tenis de corrida", 2);
 		Itens item6 = new Itens("Bola de Futebol", 3);
 
-		Mochila mochila1 = new Mochila("Nylon", 5, 5, true, false, item1);
-		// Mochila mochila2 = new Mochila("Couro", 2, 3, false, true, item2);
-		// Mochila mochila3 = new Mochila("Nylon", 4, 2, item3);
-
 		MochilaViagem mochilaViagem1 = new MochilaViagem("Nylon", 3, 4, item4);
 		// MochilaViagem mochilaViagem2 = new MochilaViagem("Tricoline", 4, 3, item5);
 		MochilaEsportiva mochilaEsportiva1 = new MochilaEsportiva("Nylon", 6, 4, item6, true);
@@ -47,7 +43,6 @@ public class SistemaPrincipal {
 
 		// Listas
 		ArrayList<Mochila> listaMochilas = new ArrayList<>();
-		listaMochilas.add(mochila1);
 		listaMochilas.add(mochilaViagem1);
 		listaMochilas.add(mochilaEsportiva1);
 
