@@ -12,6 +12,7 @@ O objetivo é praticar conceitos fundamentais de POO, como:
 - Herança
 - Polimorfismo
 - Listas
+- Classes Abstradas
 
 ## Como Executar o Projeto 
 1. Clone este repositório:
