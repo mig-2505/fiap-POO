@@ -41,7 +41,7 @@ public class SistemaPrincipal {
 		// item4.exibirResumo();
 		// mochilaViagem1.VerificarCompartimento(true);
 
-		// Listas
+		// Lista Mochila
 		ArrayList<Mochila> listaMochilas = new ArrayList<>();
 		listaMochilas.add(mochilaViagem1);
 		listaMochilas.add(mochilaEsportiva1);
@@ -52,6 +52,16 @@ public class SistemaPrincipal {
 			mochilas.mostrarItem();
 			System.out.println("---------------------------------------");
 
+		}
+
+		// Lista Itens
+		ArrayList<Itens> listaItens = new ArrayList<>();
+		listaItens.add(item4);
+		listaItens.add(item6);
+
+		for (Itens itens : listaItens){
+			itens.organizar();
+			itens.listarConteudo();
 		}
 
 	}
