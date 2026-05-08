@@ -1,6 +1,6 @@
 # Atividade — Programação Orientada a Objetos (POO)
 ## Sobre o Projeto
-Esta é a junção da atividade 1, 2, 3 e 4 desenvolvida nas últimas aulas, com foco em aprofundar os conceitos de Programação Orientada a Objetos (POO).
+Esta é a junção das atividades desenvolvida nas últimas aulas, com foco em aprofundar os conceitos de Programação Orientada a Objetos (POO).
 O objetivo é praticar conceitos fundamentais de POO, como:
 
 - Implementação de classes
@@ -13,6 +13,7 @@ O objetivo é praticar conceitos fundamentais de POO, como:
 - Polimorfismo
 - Listas
 - Classes Abstradas
+- Interfaces
 
 ## Como Executar o Projeto 
 1. Clone este repositório:
